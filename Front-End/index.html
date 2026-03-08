@@ -63,7 +63,7 @@
             e.preventDefault();
             const teks = document.getElementById( "teks" ).value.trim();
 
-            const response = await fetch( "https://fraud-detection-app-bhjy.onrender.com/predict", {
+            const response = await fetch( "http://localhost:5000/predict", {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify( { text: teks } )
